@@ -1,0 +1,17 @@
+Python scripts to extract and rebuild GXT files from GTA 3.
+
+GXT files are extracted into INI-like files that are, at least in theory,
+easier to edit with any text editor. Most GXT editors I’ve found are
+Windows-only, ancient, unreliable, and a fucking nuisance to work with. These
+scripts should ease the pain.
+
+Once the desired modifications have been made, the INI file can be rebuilt
+into a GXT file and loaded by the game as usual.
+
+Usage:
+    $ python3 extract.py german.gxt german.gxt.ini
+    [edit the file]
+    $ python3 build.py german.gxt.ini german.gxt
+
+In the “output” folder you can find the original extracted files from the game
+so you can see what the INI files are meant to look like.
